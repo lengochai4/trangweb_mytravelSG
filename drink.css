@@ -19,7 +19,7 @@ body {
 
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 20px;
 }
 
