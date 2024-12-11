@@ -7,7 +7,7 @@ body {
   display: flex;
   background-color: rgb(219, 215, 215);
   position: absolute;
-  background-image: url("image/9.jpg"); /* Đặt URL ảnh nền của bạn ở đây */
+  background-image: url("9.jpg"); /* Đặt URL ảnh nền của bạn ở đây */
   background-size: cover;
   background-attachment: fixed; /* Đặt nền cố định */
   background-position: center;
