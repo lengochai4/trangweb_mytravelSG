@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-form">
+        <h2>Đăng nhập</h2>
+        <form id="loginForm">
+          <div class="input-group">
+            <input
+              type="text"
+              id="username"
+              placeholder="Tên đăng nhập"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              placeholder="Mật khẩu"
+              required
+            />
+          </div>
+          <button type="submit" class="btn-login">Đăng nhập</button>
+        </form>
+      </div>
+    </div>
+    <script src="login.js"></script>
+
+    <div class="post-container" id="postSection" style="display: none">
+      <div class="post-form">
+        <h2>Đăng bài viết</h2>
+        <form id="postForm" enctype="multipart/form-data">
+          <div class="input-group">
+            <input
+              type="text"
+              id="title"
+              placeholder="Tiêu đề bài viết"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <textarea
+              id="content"
+              placeholder="Nội dung bài viết"
+              required
+            ></textarea>
+          </div>
+          <div class="input-group">
+            <input type="file" id="image" required />
+          </div>
+          <button type="submit" class="btn-submit">Đăng bài</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
