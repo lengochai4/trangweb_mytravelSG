@@ -37,12 +37,7 @@ body {
   z-index: 2; /* Higher than the slideshow */
   text-align: center;
   color: #ffffff; /* White text */
-  background: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Darker semi-transparent background for better text readability */
+  background: #3d3d3d;
   padding: 30px;
   border-radius: 10px;
 }
