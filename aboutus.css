@@ -43,7 +43,35 @@ body {
 
 .button {
   display: inline-block;
+  padding: 14px 26px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
 }
+.button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #6d6d6d;
+  transform: translateX(-100%);
+  transition: all 1s;
+  z-index: -1;
+}
+
+.button:hover::before {
+  transform: translateX(0);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -66,15 +94,17 @@ body {
 
 .content-section {
   float: left;
-  width: 55%;
 }
 
-.image-section {
+#image-section {
+  width: 40%;
+  margin-left: 100px;
+  margin-right: auto;
   float: right;
-  width: 60%;
+  
 }
 
-.image-section img {
+#image-section img {
   width: 100%;
   height: auto;
 }
@@ -140,11 +170,11 @@ body {
     display: block;
     margin: auto;
   }
-  .image-section {
-    float: none;
+  #image-section {
+float: none;
     width: 100%;
   }
-  .image-section img {
+  #image-section img {
     width: 100px;
     height: auto;
     display: block;
