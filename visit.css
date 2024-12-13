@@ -12,7 +12,6 @@ body {
   height: 350px; /* Adjust the height as needed */
   overflow: hidden;
   z-index: 1; /* Ensure the slideshow is behind */
-  background-color: #3d3d3d;
 }
 
 .mySlides {
